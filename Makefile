@@ -1,7 +1,7 @@
 UNAME_S := $(shell uname -s)
 ifeq ($(UNAME_S),Linux)
 	CXX = g++
-	CXXFLAGS = --std=c++11 -I~/benchmark/include -L~/benchmark/build/src -lpthread -lbenchmark -O3
+	CXXFLAGS = --std=c++11 -I~/benchmark/include -L~/benchmark/build/src -lpthread -lbenchmark 
 	EX_NAME = mybenchmark
 else
 	CXX = clang++
